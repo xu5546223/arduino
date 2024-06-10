@@ -1,50 +1,55 @@
-#寵物餵食系統
-專案簡介
-這是一個基於 Arduino 的寵物餵食系統專案，包括三個主要部分：鏡頭串流、Wi-Fi 連接資訊以及機器控制程式碼。專案使用 WebSocket 進行即時通信，並通過 Wi-Fi 連接進行遠程控制。機器使用 Arduino Uno R4 WiFi，而鏡頭模組使用 ESP32-CAM。
+# Pet Feeding System
 
-功能列表
-即時鏡頭串流
-Wi-Fi 連接
-寵物餵食機器控制
-文件說明
-1. websocket_camera_stream.ino
-這個檔案包含了處理鏡頭串流的程式碼，使用 WebSocket 進行即時影像傳輸，適用於 ESP32-CAM。
+## Project Overview
+This project is a pet feeding system based on Arduino, comprising three main parts: camera streaming, Wi-Fi connection information, and machine control code. The project uses WebSocket for real-time communication and Wi-Fi for remote control. The machine uses an Arduino Uno R4 WiFi, and the camera module uses an ESP32-CAM.
 
-2. arduino_secrets.h
-這個檔案儲存了 Wi-Fi 的 SSID 和密碼，用於連接網絡。
+## Features
+- Real-time camera streaming
+- Wi-Fi connection
+- Pet feeding machine control
 
-3. machine2.0.ino
-這個檔案包含了機器控制的主要程式碼，實現了寵物餵食機器的各種運動功能，適用於 Arduino Uno R4 WiFi。
+## Files
 
-安裝步驟
-準備硬體
+### 1. `websocket_camera_stream.ino`
+This file contains the code for handling camera streaming using WebSocket for real-time image transmission, suitable for ESP32-CAM.
 
-Arduino Uno R4 WiFi 板
-ESP32-CAM 模組
-其他必要的機械和電子元件（如伺服電機、餵食器結構）
-設定 Arduino IDE
+### 2. `arduino_secrets.h`
+This file stores the Wi-Fi SSID and password for network connection.
 
-下載並安裝 Arduino IDE
-安裝相應的板卡和庫（例如 ESP32 的板卡管理工具和 WebSocket 庫）
-上傳程式碼
+### 3. `machine2.0.ino`
+This file contains the main control code for the pet feeding machine, suitable for Arduino Uno R4 WiFi.
 
-將 arduino_secrets.h 檔案中的 Wi-Fi SSID 和密碼替換為你自己的資訊
-將 websocket_camera_stream.ino 上傳到 ESP32-CAM
-將 machine2.0.ino 上傳到 Arduino Uno R4 WiFi
-使用說明
-啟動系統
+## Setup Instructions
 
-通過 Arduino IDE 將程式碼上傳到相應的硬體
-確保相機模組和 Wi-Fi 模組正確連接並工作
-連接 Wi-Fi
+1. **Prepare Hardware**
+   - Arduino Uno R4 WiFi
+   - ESP32-CAM module
+   - Other necessary mechanical and electronic components (e.g., servo motor, feeding structure)
 
-系統將自動連接到 arduino_secrets.h 中配置的 Wi-Fi 網絡
-開始控制
+2. **Configure Arduino IDE**
+   - Download and install [Arduino IDE](https://www.arduino.cc/en/software)
+   - Install the appropriate board and libraries (e.g., ESP32 board manager and WebSocket library)
 
-使用 WebSocket 進行即時通信和控制
-通過瀏覽器或其他 WebSocket 客戶端查看即時影像並控制寵物餵食機器
-貢獻指南
-歡迎任何形式的貢獻！如果你有任何改進建議或發現了任何問題，請通過提交 Issue 或 Pull Request 來告訴我們。
+3. **Upload Code**
+   - Replace the Wi-Fi SSID and password in the `arduino_secrets.h` file with your own information
+   - Upload `websocket_camera_stream.ino` to the ESP32-CAM
+   - Upload `machine2.0.ino` to the Arduino Uno R4 WiFi
 
-聯絡方式
-如有任何問題，請聯絡：your-email@example.com
+## Usage Instructions
+
+1. **Start the System**
+   - Upload the code to the respective hardware using Arduino IDE
+   - Ensure the camera module and Wi-Fi module are correctly connected and functioning
+
+2. **Connect to Wi-Fi**
+   - The system will automatically connect to the Wi-Fi network configured in `arduino_secrets.h`
+
+3. **Control the Machine**
+   - Use WebSocket for real-time communication and control
+   - View real-time images and control the pet feeding machine through a web browser or other WebSocket client
+
+## Contributing
+Any form of contribution is welcome! If you have any suggestions for improvement or find any issues, please let us know by submitting an issue or a pull request.
+
+## Contact
+If you have any questions, please contact: `your-email@example.com`
