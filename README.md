@@ -53,12 +53,6 @@
    - 使用 MQTT 控制寵物餵食機器
    - 通過瀏覽器或其他 WebSocket/MQTT 客戶端查看即時影像並控制寵物餵食機器
 
-### 貢獻指南
-歡迎任何形式的貢獻！如果你有任何改進建議或發現了任何問題，請通過提交 Issue 或 Pull Request 來告訴我們。
-
-### 聯絡方式
-如有任何問題，請聯絡：`your-email@example.com`
-
 ## English
 
 ### Project Overview
